@@ -27,7 +27,7 @@ def home(request):
         Q (description__icontains=q)
         )
     
-    topics = Topic.objects.all()
+    topics = Topic.objects.all()[0:5]
     room_count = rooms.count()
     room_messages = Message.objects.filter(Q(room__topic__name__icontains=q))
 
@@ -42,7 +42,6 @@ def room(request, pk):
     room_messages = room.message_set.all()
 
     participants = room.participants.all()
-
 
     if request.method == 'POST':
         message = Message.objects.create( 
