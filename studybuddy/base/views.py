@@ -121,6 +121,7 @@ def loginView(request):
     if request.method == 'POST':
         username = request.POST.get('username').lower()
         password = request.POST.get('password')
+        
         # check if user has entered correct credentials
         # if not, return an error message
         # if yes, redirect to home page
@@ -136,7 +137,7 @@ def loginView(request):
             login(request, user)
             return redirect('home')
         else:
-            messages.error(request, 'Username OR Password is incorrect')
+            messages.error(request, 'Username OR Password not incorrect')
     context = {'page': page}
     return render(request, 'base/register.html', context)
 
@@ -183,9 +184,9 @@ def deleteMessage(request, pk):
 
 def userProfile(request, pk):
     user = User.objects.get(id=pk)
+    rooms = user.room_set.all()
     room_messages = user.message_set.all()
     topics = Topic.objects.all()
-    rooms = user.room_set.all()
 
     context = {'user': user, 'rooms': rooms, 'room_messages': room_messages, 'topics': topics}
     return render(request, 'base/profile.html', context)
