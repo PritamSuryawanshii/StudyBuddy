@@ -19,6 +19,8 @@ urlpatterns = [
      path('update-user/', views.updateUser, name='update-user'),
 
      path('profile/<str:pk>', views.userProfile, name='user-profile'),
+
+     path('topic/', views.topicPage, name='topic'),
      
 ]
 

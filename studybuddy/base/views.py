@@ -209,3 +209,11 @@ def updateUser(request):
     return render(request, 'base/update_user.html', {'form': form})
 
 
+
+
+
+def topicPage(request):
+    q = request.GET.get('q') if request.GET.get('q') != None else ''
+    topics = Topic.objects.filter(name__icontains=q)
+    return render(request, 'base/topic.html', {'topics': topics})
+
