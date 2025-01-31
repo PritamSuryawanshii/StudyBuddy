@@ -217,3 +217,8 @@ def topicPage(request):
     topics = Topic.objects.filter(name__icontains=q)
     return render(request, 'base/topic.html', {'topics': topics})
 
+
+
+def activityPage(request):
+    room_messages = Message.objects.all()
+    return render(request, 'base/activity.html', {'room_messages': room_messages})
