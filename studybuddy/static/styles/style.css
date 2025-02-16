@@ -164,12 +164,12 @@ a {
   height: 2.8rem;
 }
 
-.avatar.avatar--small:after {
+/* .avatar.avatar--small:after {
   width: 0.7rem;
   height: 0.7rem;
   bottom: 0px;
   right: -6px;
-}
+} */
 
 .avatar.avatar--medium img {
   width: 3.6rem;
@@ -191,12 +191,12 @@ a {
   border-radius: 50%;
 }
 
-.avatar.avatar--large:after {
+/* .avatar.avatar--large:after {
   width: 1rem;
   height: 1rem;
   bottom: 2px;
   right: 3.5px;
-}
+} */
 
 .scroll::-webkit-scrollbar {
   width: 0.6rem;
@@ -1163,3 +1163,6 @@ a {
   color: var(--color-main);
   font-weight: 1.4rem;
 }
+
+
+
