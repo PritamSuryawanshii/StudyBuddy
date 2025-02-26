@@ -1,5 +1,9 @@
 from django.urls import path
 from . import views
+from .views import redirect_to_instagram
+
+
+
 
 urlpatterns = [
      path('',views.home, name='home'),
@@ -22,8 +26,11 @@ urlpatterns = [
 
      path('topic/', views.topicPage, name='topic'),
      path('activity/', views.activityPage, name='activity'),
-     
-     
+
+
+     path('go-to-insta/', views.redirect_to_instagram, name='redirect_to_instagram'),
+
+
 ]
 
 

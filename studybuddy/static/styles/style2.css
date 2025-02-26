@@ -83,7 +83,7 @@ a {
 
 .btn--link {
   border-radius: 0;
-  padding: 15px;
+  padding: 7px;
   color: var(--color-main);
   box-shadow: none;
 }
@@ -106,7 +106,7 @@ a {
   color: var(--color-light);
 }
 
-.btn > svg {
+.btn>svg {
   fill: currentColor;
   width: 1.6rem;
   height: 1.6rem;
@@ -191,7 +191,7 @@ a {
   background-color: var(--color-dark);
 }
 
-.header > .container {
+.header>.container {
   display: flex;
   gap: 9.5rem;
 }
@@ -203,18 +203,18 @@ a {
   align-items: center;
 }
 
-.header__logo > img {
+.header__logo>img {
   height: 3.2rem;
   width: 3.2rem;
 }
 
-.header__logo > h1 {
+.header__logo>h1 {
   font-weight: 700;
   font-size: 2rem;
   color: var(--color-light);
 }
 
-.header__search > label {
+.header__search>label {
   background-color: var(--color-dark-medium);
   padding: 1.3rem 1rem;
   display: flex;
@@ -243,7 +243,7 @@ a {
     width: 20rem;
   }
 
-  .header > .container {
+  .header>.container {
     gap: 3rem;
   }
 }
@@ -314,30 +314,30 @@ a {
   margin-top: 2.4rem;
 }
 
-.layout > .container {
+.layout>.container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.layout--3 > .container > div:first-child {
+.layout--3>.container>div:first-child {
   flex-basis: 18%;
   max-width: 22.5rem;
 }
 
-.layout--3 > .container > div:nth-child(2) {
+.layout--3>.container>div:nth-child(2) {
   flex-basis: 50%;
 }
 
-.layout--3 > .container > div:last-child {
+.layout--3>.container>div:last-child {
   flex-basis: 25%;
 }
 
-.layout--2 > .container > div:first-child {
+.layout--2>.container>div:first-child {
   flex-basis: 72%;
 }
 
-.layout--2 > .container > div:last-child {
+.layout--2>.container>div:last-child {
   flex-basis: 25%;
 }
 
@@ -351,7 +351,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -46%);
-  background-color: var(--color-dark);
+  background-color: #16171d;
   border-radius: 1rem;
   box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -386,12 +386,13 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+
   .activities,
   .topics {
     display: none;
   }
 
-  .layout--3 > .container > div:nth-child(2) {
+  .layout--3>.container>div:nth-child(2) {
     flex-basis: 100%;
   }
 }
@@ -485,7 +486,7 @@ a {
 .topics__header h2 {
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--color-dark-light);
+  color: #ffffff;
 }
 
 .topics__list {
@@ -526,7 +527,7 @@ a {
   border-bottom: 1px solid var(--color-dark-medium);
 }
 
-.topics-page .header__search{
+.topics-page .header__search {
   display: block;
 }
 
@@ -863,7 +864,7 @@ a {
 
 .dropdown-menu a {
   padding: 1.2rem 4rem;
-  display: block;
+  /* display: block; */
   color: var(--color-light) !important;
   font-weight: 500;
   font-size: 1.4rem;
@@ -873,7 +874,7 @@ a {
   background-color: var(--color-dark-medium);
 }
 
-.dropdown-menu > a:not(:last-child) {
+.dropdown-menu>a:not(:last-child) {
   border-bottom: 1px solid var(--color-dark-medium);
 }
 
@@ -935,7 +936,7 @@ a {
     display: none;
   }
 
-  .layout--2 > .container > div:first-child {
+  .layout--2>.container>div:first-child {
     flex-basis: 100%;
   }
 }
@@ -1130,7 +1131,7 @@ a {
   background: transparent;
 }
 
-.room__message > form > input {
+.room__message>form>input {
   resize: none;
   background-color: var(--color-dark-light);
   color: var(--color-light);
@@ -1146,7 +1147,7 @@ a {
   position: relative;
 }
 
-.room__message > form > input::placeholder {
+.room__message>form>input::placeholder {
   color: var(--color-light-gray);
 }
 
@@ -1205,6 +1206,54 @@ a {
 }
 
 
-.header__logo:hover > h1 {
+.header__logo:hover>h1 {
   color: #367BF0;
+}
+
+
+
+
+
+
+
+
+
+.topics__list1 {
+  border: 1px solid #16171d;
+  border-radius: 7px;
+  background: #16171d;
+  padding: 20px;
+}
+
+
+.topics__list1 li {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.example {
+  background-color: #3a579a;
+  justify-content: center;
+
+}
+
+.example  span {
+  justify-content: center;
+  height: 10px;
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

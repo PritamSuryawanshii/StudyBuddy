@@ -220,3 +220,17 @@ def topicPage(request):
 def activityPage(request):
     room_messages = Message.objects.all()
     return render(request, 'base/activity.html', {'room_messages': room_messages})
+
+
+
+
+
+
+
+
+
+def redirect_to_instagram(request):
+    return redirect("https://www.instagram.com/")
+
+
+
