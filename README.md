@@ -53,6 +53,14 @@ http://127.0.0.1:8000/
 #
 
 
+### Create Super User
+
+--> To create the supeuser (admin), we use :
+```bash
+python manage.py createsuperuser
+```
+
+
 ## 💻 If You Want To Create New Django Project 
 ### --> Create a Django Project
 ```
