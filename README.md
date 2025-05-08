@@ -4,8 +4,7 @@
 
 --> Clone the repository using the command below :
 ```bash
-git clone https://github.com/PritamSuryawanshii/Last_Year_CollegeProject.git
-
+git clone https://github.com/PritamSuryawanshii/StudyBuddy
 ```
 
 --> Move into the directory where we have the project files : 
